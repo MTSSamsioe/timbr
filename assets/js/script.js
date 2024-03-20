@@ -21,7 +21,7 @@ function valuesScroll() {
     const timbr_value_ani_left = document.querySelector('#timbr-value-left');
     const timbr_value_ani_right = document.querySelector('#timbr-value-right');
     window.addEventListener('scroll', () => {
-        if (window.scrollY > 70) {
+        if (window.scrollY > 160) {
             timbr_value_ani_left.classList.add('timbr-value-ani-left')
             timbr_value_ani_right.classList.add('timbr-value-ani-right')
         } else {
@@ -31,6 +31,24 @@ function valuesScroll() {
     })
 }
 document.addEventListener('DOMContentLoaded', valuesScroll)
+
+// Om oss animation
+
+/* function omOssScroll() {
+    const timbr_omOss_ani_right = document.querySelector('#timbr-om-oss');
+    
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 1500) {
+            
+            timbr_omOss_ani_right.classList.add('timbr-value-ani-left')
+        } else {
+            
+            timbr_omOss_ani_right.classList.remove('timbr-value-ani-left')
+        }
+    })
+}
+document.addEventListener('DOMContentLoaded', omOssScroll) */
+
 
 // Form validation
 
@@ -43,7 +61,8 @@ form.addEventListener('submit', (e) => {
     if(!form.checkValidity()){
         e.preventDefault();
     } else {
-        alert('success');
+        console.log('Meddelande skickat')
+        //alert('success');
     }
     form.classList.add('was-validated');
 })

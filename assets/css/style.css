@@ -55,7 +55,7 @@ hr {
 /* hero section css */
 
 #hero-container {
-    padding-top: 10rem;
+    padding-top: 5rem;
     background-image: linear-gradient( var(--timbr-nav) , var(--timbr-body));
     border-bottom: 5px;
     
@@ -108,7 +108,7 @@ hr {
        width: 10px;
        height: 10px;
        border-radius: 50%;
-       border: 2px solid gray;
+       border: 2px solid var(--timbr-accent-green);
        background: var(--timbr-body);
     }
   
@@ -118,9 +118,9 @@ hr {
 
 
 #circle-container {
-    width: 100%;
-    height: 100%;
-    aspect-ratio: 1/1;
+    width: 15rem;
+    height: 15rem;
+    /* aspect-ratio: 1/1; */
     padding: 15px;
     border-style: solid;
     border-color: var(--timbr-accent-green);
@@ -135,7 +135,7 @@ hr {
     background: url("../images/cyckel_parkering.jpg") no-repeat center center;
     height: 100%;
     border-radius: 50%;
-    background-size: cover;
+    background-size: contain;
 }    
 /* https://wp-assets.hemnet.se/wp-content/uploads/2013/03/bygga-nytt.jpg */
 @media screen and (max-width: 767px) {
@@ -174,6 +174,25 @@ hr {
         transform: translate(0px, 0px); 
     }    
   }  
+
+/* Om oss  */
+
+/* åkasjuketablett */
+@media (prefers-reduced-motion: no-preference) {
+
+#timbr-om-oss {
+    scale: 0.7; opacity: 0;
+    /* transform-origin: left; */
+    animation: om-oss-ani linear forwards;
+    animation-timeline: view() ;
+    animation-range: entry ;
+}
+
+@keyframes om-oss-ani {
+    
+    to { scale: 1 ; opacity: 1; }
+}
+}
 
 /* Form section */  
 
@@ -247,6 +266,11 @@ hr {
 
 /* Gallery */
 
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    background-color: gray;
+    
+}
+
 .inner-carousel {
     max-height: 100rem;
 }
@@ -255,7 +279,7 @@ hr {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    border: 2px solid gray;
+    border: 2px solid white;
     background: var(--timbr-body);
     z-index: -1;
 }

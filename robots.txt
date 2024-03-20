@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /404.html
+Disallow: /success.html
+
+sitemap: https://timbr.se/sitemap.xml
