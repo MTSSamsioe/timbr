@@ -17,20 +17,22 @@ document.addEventListener('DOMContentLoaded', userScroll)
 
 // Values scroll effect
 
-function valuesScroll() {
+/* function valuesScroll() {
     const timbr_value_ani_left = document.querySelector('#timbr-value-left');
     const timbr_value_ani_right = document.querySelector('#timbr-value-right');
     window.addEventListener('scroll', () => {
-        if (window.scrollY > 160) {
+        if (window.scrollY > 500 ) {
+           
             timbr_value_ani_left.classList.add('timbr-value-ani-left')
             timbr_value_ani_right.classList.add('timbr-value-ani-right')
         } else {
+           
             timbr_value_ani_left.classList.remove('timbr-value-ani-left')
             timbr_value_ani_right.classList.remove('timbr-value-ani-right')
         }
     })
 }
-document.addEventListener('DOMContentLoaded', valuesScroll)
+document.addEventListener('DOMContentLoaded', valuesScroll) */
 
 // Om oss animation
 
@@ -63,6 +65,9 @@ form.addEventListener('submit', (e) => {
     } else {
         console.log('Meddelande skickat')
         //alert('success');
+        // testing
+        const nextUrl = form.querySelector('input[name="_next"]').value;
+        window.location.href = nextUrl;
     }
     form.classList.add('was-validated');
 })

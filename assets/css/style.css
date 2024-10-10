@@ -145,6 +145,10 @@ hr {
     }     
 }    
 
+/* .timbr-value-visibility {
+    visibility: hidden;
+} */
+
 .timbr-value-ani-left {
     animation: timbr-value-ani-left 3s;
 }    
@@ -178,11 +182,11 @@ hr {
 /* Om oss  */
 
 /* åkasjuketablett */
-@media (prefers-reduced-motion: no-preference) {
+/* @media (prefers-reduced-motion: no-preference) {
 
 #timbr-om-oss {
     scale: 0.7; opacity: 0;
-    /* transform-origin: left; */
+    
     animation: om-oss-ani linear forwards;
     animation-timeline: view() ;
     animation-range: entry ;
@@ -192,7 +196,7 @@ hr {
     
     to { scale: 1 ; opacity: 1; }
 }
-}
+} */
 
 /* Form section */  
 
