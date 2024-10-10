@@ -1,19 +1,5 @@
 
-// Nav scroll effect
-function userScroll() {
-    const navbar = document.querySelector('#navbar-timbr')
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
-            
-            // navbar.classList.add('bg-dark')
-            navbar.classList.add('navbar-timbr')
-        } else {
-            // navbar.classList.remove('bg-dark')
-            navbar.classList.remove('navbar-timbr')
-        }
-    })
-}
-document.addEventListener('DOMContentLoaded', userScroll)
+
 
 // Values scroll effect
 

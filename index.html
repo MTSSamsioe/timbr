@@ -30,30 +30,69 @@
 <body>
     <header>
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-md fixed-top" id="navbar-timbr">
-            <div class="container ">
-                <a href="#hem" class="navbar-brand"><img src="./assets/images/TIMBR_LOGO_CLEAN.png" alt="timbr logo" height="30" ></a>
-                <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" class="navbar-toggler" aria-label="Navigation button om smaller screens">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a href="#hem" class="nav-link active">Hem</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#om-oss" class="nav-link active">Om oss</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#contact" class="nav-link active">Kontakt</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#gallery" class="nav-link active">Bilder</a>
-                        </li>
-                    </ul>
-                </div> 
-            </div>
-        </nav>
+      <nav class="navbar navbar-expand-md fixed-top" id="navbar-timbr">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"
+            ><img
+              src="./assets/images/TIMBR_LOGO_CLEAN.png"
+              alt="timbr logo"
+              height="30"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/index.html">Hem</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Tjänster
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="/renovering.html"
+                      >Renovering</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/rivning.html">Rivning</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/projektledning.html"
+                      >Projektledning</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/bilder.html">Bilder</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Om oss</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/kontakt.html">Kontakt</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
     <main id="main-timbr">
         <!-- Hero image -->
@@ -427,6 +466,8 @@
                     <!-- Bootstrap -->
                     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
                     <!-- Egen java script -->
-                    <script src="./assets/js/script.js"></script>
+                    <script src="/assets/js/script.js"></script>
+                    <!-- nav scroll script -->
+                    <script src="/assets/js/navScroll.js"></script>
                 </body>
                 </html>
