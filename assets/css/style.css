@@ -67,27 +67,32 @@ hr {
 
 /* hero section css */
 
-#hero-container {
-    padding-top: 5rem;
-    background-image: linear-gradient( var(--timbr-nav) , var(--timbr-body));
-    border-bottom: 5px;
-    
+#hero-img {
+    position: relative;
+    background-image: url('https://teltonika-networks.com/cdn/extras/13407/org-iot-for-reducing-risks-in-construction-sites.webp');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 50vh; /* Full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Adjust text color as needed */
+    text-align: center;
     
 }
 
-#hero-img {
+#hero-container {
     
+    position: relative;
+    z-index: 2; 
     
-    background-image: url("../images/hero_frilagd_col_sm_h400px_comp.png");
-    /* background-attachment: fixed; */
-    background-position: center;
-    background-repeat: no-repeat;
-   /*  background-size: auto 40rem ; */
-   background-size: contain;
-    
+}
 
-    height: 27rem ;
-    
+#hero-text-container {
+    background: rgba(0, 0, 0, 0.5); 
+    padding: 20px;
+    border-radius: 10px;
 }
 
 #hero-text {
