@@ -10,24 +10,36 @@ html, body {
 
 /* Color Variables */
 :root {
-    --timbr-body:rgba(246,238,227, 0.1);
-    --timbr-nav:rgba(229,222,207, 1);
-    --timbr-nav-blue: rgba(95, 119, 172, 0.3);
-    --timbr-footer: rgba(200, 173, 127, 0.7);
+    /* Blues */
+    --timbr-nav-blue: rgba(95, 119, 172, 0.8);
     --timbr-footer-blue: rgba(95, 119, 172, 0.6);
-    --timbr-accent-green: rgba(128, 128, 0, 1);
     --timbr-accent-blue: rgba(95, 119, 172, 0.7);
+    --timbr-clear-blue: rgba(14, 110, 255, 0.5);
+    --timbr-dark-blue: rgba(20, 0, 200, 0.3);
+
+    /* Beige grays */
+    --timbr-nav:rgba(229,222,207, 0.9);
+    --timbr-footer: rgba(200, 173, 127, 0.7);
+
+    /* Greens */
+    --timbr-accent-green: rgba(128, 128, 0, 1);
+
+    /* Darks */
+    --timbr-body:rgba(246,238,227, 0.1);
+
+    /* whites */
+    --timbr-white-smoke: rgba(245,245,245, 0.8);
 }
 
 .timbr-border-color {
-    border-color: var(--timbr-accent-green) !important;
+    border-color: var(--timbr-clear-blue) !important;
 }
 
 .timbr-accent-blue {
-    background-color: var(--timbr-accent-blue) !important;
+    background-color: var(--timbr-clear-blue) !important;
 }
 .timbr-accent-blue-bg {
-    background-color: var(--timbr-accent-blue) !important;
+    background-color: var(--timbr-clear-blue) !important;
 }
 
 * {
@@ -40,7 +52,7 @@ body {
 }
 
 hr {
-    color: var(--timbr-accent-green);
+    color: var(--timbr-clear-blue);
     margin: 0px !important;
 }
 
@@ -54,13 +66,21 @@ hr {
 
 .navbar-timbr-base {
     margin-bottom: 3rem;
+    background-color: var(--timbr-nav);
+    box-shadow: 0 0 10px rgba(0, 0, 0,0.7);
+    font-weight: 500;
+    font-size: large;
 }
 
 .navbar-timbr {
     background-color: var(--timbr-nav-blue);
-    opacity: 0.9;
+    /* opacity: 0.9; */
     box-shadow: 0 0 10px rgba(0, 0, 0,0.5);
     transition: all 0.5s ease-in-out;
+}
+#timbr-ul {
+    width: 90%;
+
 }
 
 
@@ -127,7 +147,7 @@ hr {
     }
 
     .carousel-indicators .active {
-        background:  var(--timbr-accent-blue)
+        background:  var(--timbr-clear-blue)
         !important;
     }
     
@@ -135,7 +155,7 @@ hr {
        width: 10px;
        height: 10px;
        border-radius: 50%;
-       border: 2px solid var(--timbr-accent-green);
+       border: 2px solid var(--timbr-footer);
        background: var(--timbr-body);
     }
   
@@ -150,7 +170,7 @@ hr {
     /* aspect-ratio: 1/1; */
     padding: 15px;
     border-style: solid;
-    border-color: var(--timbr-accent-green);
+    border-color: var(--timbr-footer);
     border-width: 3px;
     border-radius: 50%;
     max-width: 300px;
@@ -228,12 +248,12 @@ hr {
 /* Form section */  
 
 #timbr-form {
-    border-color: var(--timbr-accent-green);
+    border-color: var(--timbr-footer);
     border-width: 3px;
 }    
 
 .form-control {
-    border-color: var(--timbr-accent-green);
+    border-color: var(--timbr-footer);
 }    
 
 .form-floating {

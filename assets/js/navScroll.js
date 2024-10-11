@@ -4,7 +4,8 @@ document.addEventListener("DOMContentLoaded", function() {
         const navbar = document.querySelector('#navbar-timbr');
         if (navbar) {
             window.addEventListener('scroll', () => {
-                if (window.scrollY > 50) {
+                const scrollThreshold = window.innerHeight * 0.15;
+                if (window.scrollY > scrollThreshold) {
                     navbar.classList.add('navbar-timbr');
                 } else {
                     navbar.classList.remove('navbar-timbr')
@@ -16,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     // Check if header content is loaded
-    const headerPlaceholder = document.getElementById('header-placeholder');
+    const headerPlaceholder = document.getElementById('nav-placeholder');
     if (headerPlaceholder) {
         const observer = new MutationObserver((mutations) => {
             mutations.forEach((mutation) => {
