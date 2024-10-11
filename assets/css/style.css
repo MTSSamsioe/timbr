@@ -107,7 +107,7 @@ hr {
 
 #hero-img {
     position: relative;
-    background-image: url('https://teltonika-networks.com/cdn/extras/13407/org-iot-for-reducing-risks-in-construction-sites.webp');
+    background-image: url(../images/lyftkran.webp);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
