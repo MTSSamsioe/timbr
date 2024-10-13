@@ -82,26 +82,52 @@ hr {
 
 .navbar-timbr-base {
     margin-bottom: 3rem;
-    background-color: var(--timbr-white-smoke);
+    
+    background-color: var(--timbr-nav-blue);
     /* backdrop-filter: blur(30px); /* Apply blur effect */
     /* -webkit-backdrop-filter: blur(10px);  */
     box-shadow: 0 0 10px rgba(0, 0, 0,0.7);
     font-weight: 500;
     font-size: large;
+    
 }
 
-.navbar-timbr {
+
+/* Nav scroll animation index*/
+
+.navbar-timbr-index-base {
+    background-color: none;
+    box-shadow: none;
+    
+}
+
+.navbar-timbr-index-scroll {
     background-color: var(--timbr-nav-blue);
     /* opacity: 0.9; */
-    box-shadow: 0 0 10px rgba(0, 0, 0,0.5);
+    
     transition: all 0.7s ease-in-out;
+    
 }
 #timbr-ul {
     width: 90%;
-
+    
 }
 
+nav a {
+    color: white !important;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add darker text shadow */
+}
 
+.dropdown-menu {
+    background-color: var(--timbr-nav-blue);
+    border: 1px solid var(--timbr-footer);
+}
+
+/* .navbar-toggler {
+    color: white !important;
+    
+
+} */
 
 /* hero section css */
 
@@ -117,6 +143,14 @@ hr {
     justify-content: center;
     color: white; /* Adjust text color as needed */
     text-align: center;
+    
+}
+
+@media screen and (max-width: 767px) {
+    #hero-img {
+        background-attachment: fixed; /* Ensure parallax effect on small screens */
+        height: 60vh; /* Adjust height for smaller screens */
+    }    
     
 }
 

@@ -2,13 +2,20 @@ document.addEventListener("DOMContentLoaded", function() {
     // Function to handle scroll event
     function handleScroll() {
         const navbar = document.querySelector('#navbar-timbr');
+        navbar.classList.remove('navbar-timbr-base');
+        
         if (navbar) {
             window.addEventListener('scroll', () => {
-                const scrollThreshold = window.innerHeight * 0.15;
-                if (window.scrollY > scrollThreshold) {
-                    navbar.classList.add('navbar-timbr');
+                const scrollThreshold = window.innerHeight * 0.2;
+                if (window.scrollY < scrollThreshold) {
+                    
+                    navbar.classList.add('navbar-timbr-index-base');
+                    
+                    navbar.classList.remove('navbar-timbr-index-scroll');
+                    console.log('inte scroll');
                 } else {
-                    navbar.classList.remove('navbar-timbr')
+                    navbar.classList.add('navbar-timbr-index-scroll')
+                    console.log('scrolling');
                 }
             });
         } else {
