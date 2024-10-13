@@ -133,39 +133,62 @@ nav a {
 
 #hero-img {
     position: relative;
-    background-image: url(../images/lyftkran.webp);
-    background-attachment: fixed;
+    background-image: url(../images/riddarholmen_crop_1920x1280.webp);
     background-size: cover;
-    background-position: center;
-    height: 60vh; /* Full viewport height */
-    display: flex;
+    background-position: right;
+    /* background-repeat: no-repeat; */
+    height: 40vh; /* Full viewport height */
+    /* display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
     color: white; /* Adjust text color as needed */
-    text-align: center;
+   
     
 }
 
-@media screen and (max-width: 767px) {
+/* @media screen and (max-width: 767px) {
     #hero-img {
-        background-attachment: fixed; /* Ensure parallax effect on small screens */
-        height: 60vh; /* Adjust height for smaller screens */
+        background-attachment: fixed; 
+        height: auto; 
+        width: 100%;
     }    
     
-}
+} */
 
 #hero-container {
     
-    position: relative;
+    position: absolute;
     z-index: 2; 
     background: rgba(0, 0, 0, 0.5); 
     border-radius: 15px;
-    
+    width: auto;
+    height: auto;
+    bottom: 15%;
+    right: 20%;
 }
 
+#hero-container h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+} 
+
+#hero-container h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+#hero-container p {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+
 #hero-text-container {
-    padding: 20px;
-    border-radius: 10px;
+    
+   
+    
 }
 
 #hero-text {
