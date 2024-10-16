@@ -96,9 +96,12 @@ hr {
 /* Nav scroll animation index*/
 
 .navbar-timbr-index-base {
+    
     background-color: none;
     box-shadow: none;
-    
+    margin-bottom: 3rem;
+    font-weight: 500;
+    font-size: large;
 }
 
 .navbar-timbr-index-scroll {
@@ -135,34 +138,17 @@ nav a {
     position: relative;
     background-image: url(../images/riddarholmen_crop_1920x1280.webp);
     background-size: cover;
-    background-position: right;
-    /* background-repeat: no-repeat; */
-    height: 60vw; /* Full viewport height */
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
-    color: white; /* Adjust text color as needed */
+    background-position: center;
+    height: 60vw; 
+    color: white; 
    
     
 }
 
-/* @media screen and (max-width: 767px) {
-    #hero-img {
-        background-attachment: fixed; 
-        height: auto; 
-        width: 100%;
-    }    
-    
-} */
 
-#hero-flex-container {
-    
-    
-    
-    
-}
+
 #hero-text {
-    padding: 3vw;
+    padding: 2vw;
     animation: fadeIn 5s;
     z-index: 2; 
     background: rgba(0, 0, 0, 0.5); 
@@ -171,13 +157,13 @@ nav a {
     height: auto;
     width: fit-content;
     position: absolute;
-    top: 20%;
+    bottom: 10%;
     right:20%;
    
 }
 
 #hero-text h1 {
-    font-size: 4vw;
+    font-size: 3vw;
     font-weight: 700;
     margin-bottom: 1vw;
 } 
@@ -190,15 +176,10 @@ nav a {
 #hero-text p {
     font-size: 2vw;
     font-weight: 500;
-    margin-bottom: 1vw;
+    margin-bottom: 0.5vw;
 }
 
 
-#hero-text-container {
-    
-   
-    
-}
 
 
 @keyframes fadeIn {
@@ -223,24 +204,28 @@ nav a {
     
     /*  Testimonials */
     
-    #timbr-slide {
-        height: auto;
+    #timbr-slide .carousel-inner {
+        height: 10vw;
+     
+        padding-bottom: 8rem;
     }
 
+
     #timbr-slide h3 {
-        font-size: 3vW !important;
+        font-size: clamp(1rem, 1vw, 1.5vw) !important;
     }
     #timbr-slide p  {
-        font-size: 2vW !important;
+        font-size: clamp(0.5rem, 0.7vw, 1vw) !important;
         margin-bottom: 0vw;
     }
     #timbr-slide i {
-        font-size: 2vW !important;
+        font-size: clamp(0.5rem, 0.7vw, 1vw) !important;
         margin-top: 0;
     }
 
     .carousel-item {
-        margin-bottom: 8vW;
+        margin-bottom: 6vW;
+        
     }
     /* #timbr-slide i {
         font-size: 1vw !important;
@@ -252,8 +237,8 @@ nav a {
     }
     
     #timbr-slide .carousel-indicators button {
-       width: 10px;
-       height: 10px;
+       width: 0.7vw;
+       height: 0.7vw;
        border-radius: 50%;
        border: 2px solid var(--timbr-footer);
        background: var(--timbr-body);
@@ -335,23 +320,9 @@ nav a {
   }  
 
 /* Om oss  */
-
-/* åkasjuketablett */
-/* @media (prefers-reduced-motion: no-preference) {
-
-#timbr-om-oss {
-    scale: 0.7; opacity: 0;
-    
-    animation: om-oss-ani linear forwards;
-    animation-timeline: view() ;
-    animation-range: entry ;
+#timbr-om-oss-bild{
+ width: 10em;
 }
-
-@keyframes om-oss-ani {
-    
-    to { scale: 1 ; opacity: 1; }
-}
-} */
 
 /* CONTACT Form section */  
 
