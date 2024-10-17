@@ -211,6 +211,75 @@
                 
                 
             </section>
+
+            <!-- Contact -->
+            <hr>
+            <section id="contact">
+                <div class="container my-3">
+                    <div class="row my-3" id="timbr-form">
+                        <div class="col-md-6 my-3  d-flex justify-content-center align-items-center ps-0 ">
+                            <div class="p-2" id="timbr-gallery-text">
+                                <h3 class="h3 p-2">Kontakt</h3>
+                                <p class="fs-6 p-2">
+                                    Vi brukar börja med ett mail eller ett samtal, därefter tar vi en kopp kaffe och pratar vidare. Om ni har några frågor och funderingar, tveka inte att fylla i frågeformuläret eller skicka ett mail till  <a class="link-underline-opacity-0 link-dark fw-bold" href="mailto:info@timbr.se">info@timbr.se.</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 my-3 ps-0 ">
+                            <form class="timbr-validation card-body p-3" action="https://formsubmit.co/9f0b3337cc5f643754b05881ac15bd18" method="POST" novalidate>
+                                <!-- Honeypot -->
+                                <!-- 9f0b3337cc5f643754b05881ac15bd18 -->
+                                <input type="text" name="_honey" style="display:none;">
+                                
+                                <!-- Disable Captcha -->
+                                <input type="hidden" name="_captcha" value="false">
+                                
+                                <input type="hidden" name="_next" value="https://www.timbr.se/success.html">
+                                
+                                <div class="mb-3 form-floating">
+                                    <i class="fa-solid fa-user-tie icon fa-lg" aria-hidden="true"></i>
+                                    <input id="name" name="name" type="name" class="form-control" placeholder="Namn" required autocomplete="name">
+                                    <label for="name" class="form-label" >Namn</label>
+                                    <!-- Formvalidation Name -->
+                                    <div class="valid-feedback"> Tack!</div>
+                                    <div class="invalid-feedback"> Vänligen ange ditt namn</div>
+                                </div>
+                                <div class="mb-3 form-floating">
+                                    <i class="fa-solid fa-envelope icon fa-lg" aria-hidden="true"></i>
+                                    <input id="email" name="email" type="email" class="form-control" placeholder="E-post" required autocomplete="email">
+                                    <label for="email" class="form-label" >E-post</label>
+                                    <!-- Formvalidation E-mail -->
+                                    <div class="valid-feedback"> Tack !</div>
+                                    <div class="invalid-feedback"> Vänligen ange en giltig e-postadress</div>
+                                </div>
+                                <div class="mb-3 form-floating">
+                                    <i class="fa-solid fa-phone icon fa-lg" aria-hidden="true"></i>
+                                    <input id="phone" name="phone" type="number" class="form-control" placeholder="Telefonnummer" required autocomplete="tel">
+                                    <label for="phone" class="form-label">Telefonnummer</label>
+                                    <!-- Formvalidation Telephone number-->
+                                    <div class="valid-feedback"> Tack!</div>
+                                    <div class="invalid-feedback"> Vänligen ange ditt telefonnummer</div>
+                                </div>
+                                <div class="mb-3 form-floating">
+                                    <i class="fa-solid fa-message icon-textarea fa-lg" aria-hidden="true"></i>
+                                    <textarea id="message" name="comments,&nbsp;questions" class="form-control" rows="20" placeholder="Meddelande" style="height: 150px;" required></textarea>
+                                    <label for="message" >Meddelande</label>
+                                    <!-- Formvalidation Meddelande -->
+                                    <div class="valid-feedback"> Tack!</div>
+                                    <div class="invalid-feedback"> Vänligen ange ett meddelande</div>
+                                </div>
+                                <div class="d-flex justify-content-end ">
+                                    <input type="submit" class="btn timbr-accent-blue-bg text-light " value="Skicka">
+                                </div>
+                            </form>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
             <!-- Samarbetsparners -->
             <sektion>
                 <hr>
@@ -241,6 +310,7 @@
                     <script src="assets/js/parallax.js"></script>
                     <!-- nav scroll script -->
                     <script src="assets/js/navScroll.js"></script>
-
+                    <!-- Form validation -->
+                    <script src="assets/js/formvalidation.js"></script>
                 </body>
                 </html>

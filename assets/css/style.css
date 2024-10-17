@@ -38,9 +38,7 @@ html, body {
 .timbr-accent-blue {
     background-color: var(--timbr-clear-blue) !important;
 }
-.timbr-accent-blue-bg {
-    background-color: var(--timbr-clear-blue) !important;
-}
+
 
 * {
     padding: 0px;
@@ -379,6 +377,18 @@ nav a {
     -webkit-backdrop-filter: blur(1px); 
 }
 
+.valid-feedback , .invalid-feedback {
+    background-color: rgba(255, 255, 255, 0.7);
+    
+    border-radius: 15px;
+    backdrop-filter: blur(10px); /* Apply blur effect */
+    -webkit-backdrop-filter: blur(10px); 
+
+}
+
+.timbr-accent-blue-bg {
+    background-color: rgba(95, 119, 172, 1) !important;
+}
 
 /* /* /* Media queries Club ethos */
 /* @media screen and (max-width: 1200px) {
@@ -446,7 +456,7 @@ nav a {
 }
 
 #error-img {
-    background-image: url("/assets/images/peter_404.png");
+    background-image: url("assets/images/peter_404.png");
     /* background-attachment: fixed; */
     background-position: center;
     background-repeat: no-repeat;
