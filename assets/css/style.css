@@ -200,7 +200,7 @@ nav a {
     }    
     
     
-    /*  Testimonials */
+    /*  Customer testimonials */
     
     #timbr-slide .carousel-inner {
         height: 10vw;
@@ -243,7 +243,7 @@ nav a {
     }
   
 
-/* Timbr valuse */
+/* Business */
 
 
 
@@ -283,7 +283,7 @@ nav a {
 
 .timbr-value-ani-left {
     
-    animation: timbr-value-ani-left 3s forwards;
+    animation: timbr-value-ani-left 1.5s forwards;
 }    
 
 @keyframes timbr-value-ani-left {
@@ -303,7 +303,7 @@ nav a {
 }
 
 .timbr-value-ani-right {
-    animation: timbr-value-ani-right 3s forwards;
+    animation: timbr-value-ani-right 1.5s forwards;
 }    
 
 @keyframes timbr-value-ani-right {
