@@ -41,7 +41,7 @@ html, body {
 }
 
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
@@ -81,8 +81,7 @@ hr {
     margin-bottom: 3rem;
     
     background-color: var(--timbr-nav-blue);
-    /* backdrop-filter: blur(30px); /* Apply blur effect */
-    /* -webkit-backdrop-filter: blur(10px);  */
+    
     box-shadow: 0 0 10px rgba(0, 0, 0,0.7);
     font-weight: 500;
     font-size: large;
@@ -94,7 +93,7 @@ hr {
 
 .navbar-timbr-index-base {
     
-    background-color: none;
+    /* background-color: none; */
     box-shadow: none;
     margin-bottom: 3rem;
     font-weight: 500;
@@ -135,7 +134,7 @@ nav a {
     position: relative;
     background-image: url(../images/riddarholmen_crop_1920x1280.webp);
     background-size: cover;
-    background-position: center;
+    /* background-position: center; */
     height: 60vw; 
     color: black; 
     max-height: 500px;

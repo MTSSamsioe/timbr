@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
     function handleScroll() {
         const navbar = document.querySelector('#navbar-timbr');
         navbar.classList.remove('navbar-timbr-base');
-        
+        navbar.classList.add('navbar-timbr-index-base');
         if (navbar) {
             window.addEventListener('scroll', () => {
                 const scrollThreshold = window.innerHeight * 0.2;
