@@ -6,6 +6,7 @@ html, body {
     height: 100%;
     display: flex;
     flex-direction: column;
+    background-color: var(--timbr-body);
 }
 
 /* Color Variables */
@@ -40,14 +41,12 @@ html, body {
 }
 
 
-* {
-    padding: 0px;
-    margin: 0px;
+*{
+    margin: 0;
+    padding: 0;
 }
 
-body {
-    background-color: var(--timbr-body);
-}
+
 
 hr {
     color: var(--timbr-clear-blue);
@@ -141,90 +140,28 @@ nav a {
     color: black; 
     max-height: 500px;
     display: flex;
-    justify-content: left;
-    align-items: bottom;
+    justify-content: center;
+    align-items: center;
 }
 
 #hero-text {
-    padding: 2rem;
-    animation: fadeIn 3s;
+    background: rgba(245, 245, 245, 0.4); 
+    background-image: url(../images/timbe_logo_svart_byline.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: fadeIn 3.5s;
     z-index: 2; 
-    background: rgba(245, 245, 245, 0.9); 
     border-radius: 1rem;
-    height: fit-content;
-    width: fit-content;
-    position: relative;
-    right: -20%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    text-align: left;
-    margin-top: 2rem;
-}
-
-#hero-text h1 {
-    font-size: 2rem; /* Adjusted for responsiveness */
-    font-weight: 700;
-    margin-bottom: 1rem;
-} 
-
-#hero-text h2 {
-    font-size: 1rem; /* Adjusted for responsiveness */
-    font-weight: 500;
-    margin-bottom: 1rem;
-}
-
-#hero-text p {
-    font-size: 1rem; /* Adjusted for responsiveness */
-    font-weight: 500;
-    margin-bottom: 1rem;
+    height: 50%;
+    width: 50%;
+    
+   
 }
 
 
-/* Media queries for finer control on smaller screens */
-@media (max-width: 768px) {
-    #hero-text {
-        padding: 1rem;
-        
-        
-    }
 
-    #hero-text h1 {
-        font-size: 1.5rem;
-        margin-bottom: 0.7rem;
-    }
 
-    #hero-text h2 {
-        font-size: 0.7rem;
-        margin-bottom: 0.7rem;
-    }
-
-    #hero-text p {
-        font-size: 0.7rem;
-        margin-bottom: 0.5rem;
-    }
-
-}
-
-@media (max-width: 576px) {
-    #hero-text {
-        padding: 0.7rem;
-        
-    }
-
-    #hero-text h1 {
-        font-size: 0.7rem;
-        margin-bottom: 0.5rem;
-    }
-
-    #hero-text h2 {
-        font-size: 0.5rem;
-        margin-bottom: 0.5rem;
-    }
-    #hero-text p {
-        font-size: 0.5rem;
-        margin-bottom: 0.3rem;
-    }
-}
 @keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
@@ -238,7 +175,7 @@ nav a {
         left: 0; */
         width: 100%;
         /* height: 10%; */
-        padding: 0.2rem 0;
+        /* padding: 0.2rem 0; */
         text-align: center; /* Center the text */
         box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.4); 
         z-index: 1000; 
