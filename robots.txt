@@ -1,5 +1,14 @@
 User-agent: *
 Disallow: /404.html
 Disallow: /success.html
+Disallow: /*?lang=
+Disallow: /private/
+Disallow: /temp/
+
+User-agent: Googlebot
+Disallow: /no-google/
+
+User-agent: Bingbot
+Disallow: /no-bing/
 
 sitemap: https://timbr.se/sitemap.xml
