@@ -1,0 +1,12 @@
+{
+    "name": "timbr",
+    "description": "timbr bygg ab website",
+    "require": {
+      "php": "^7.4"
+    },
+    "scripts": {
+      "post-install-cmd": [
+        "echo 'Composer dependencies installed.'"
+      ]
+    }
+  }
