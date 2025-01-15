@@ -25,23 +25,35 @@
     </head>
 </head>
 <body>
-    <sektion  >
-        <div class="container-fluid " id="not-found-container">
-            <div class="row  d-flex align-items-center ">
-                <div class="col-md-6 " id="error-img"></div>
-                <div class="col-md-6 d-felx " id="hero-text-container">
-                    <div class=" w-70  p-2"  id="hero-text">
-                        
-                        <h1 class="h1">Oj sidan kan inte hittas... fel 404</h1>
-                        
-                        <p class="px-5 fs-6 fw-bold mb-0">Jaha! Vem är det som har byggt det här egentligen?!</p>
-                        
-                        <a href="index.html" class="btn btn-primary">Tillbaka till siten</a>
+    <header>
+        <!-- Navbarf -->
+        
+        <div id="nav-placeholder" ></div>
+        <script src="assets/js/nav.js"></script>
+        
+    </header>
+    <main>
+        <div class="container-fluid" id="not-found-container">
+            <div class="row">
+                <div class="col-8 offset-2 d-flex justify-content-center align-items-center">
+                    <div class="card">
+                        <div class="card-body">
+                            <h1>404 Sidan kan inte hittas!</h1>
+                            <h2 class="h5">Jaha vem är det som har byggt det här då...?</h2>
+                            <p>Det verkar som att sidan du söker inte finns. Vänligen följ länken för att komma tillbaka till startsidan.</p>
+                            <a href="/index.html" class="btn btn-danger" id="error-btn">Tillbaka till sidan</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
-    </sektion>
+    </main>
+    <footer >
+            
+        <div id="footer-placeholder"></div>
+        <script src="assets/js/footer.js"></script>
+           
+            </footer>
+   
 </body>
 </html>
