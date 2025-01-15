@@ -401,10 +401,10 @@ nav a {
 
 /* 404 */
 
-#not-found-container {
+.messsage-container {
     padding-top: 10rem;
     padding-bottom: 10rem;
-    background-color: var(--timbr-clear-blue);
+    background-color: rgba(14, 110, 255, 0.1);
     border-bottom: 5px;
     height: 60vh;
     
